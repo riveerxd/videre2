@@ -8,28 +8,28 @@
           "@graph": [
             {
               "@type": "MedicalClinic",
-              "@id": "https://www.clinicm.cz/#organization",
-              "name": "M Clinic s.r.o.",
-              "legalName": "M Clinic s.r.o.",
-              "url": "https://www.clinicm.cz",
-              "logo": "https://www.clinicm.cz/logo.png",
-              "foundingDate": "2020",
-              "email": "info@clinicm.cz",
-              "telephone": "+420-XXX-XXX-XXX",
+              "@id": "https://www.videre2.cz/#organization",
+              "name": "Videre II s.r.o.",
+              "legalName": "Videre II s.r.o.",
+              "url": "https://www.videre2.cz",
+              "logo": "https://www.videre2.cz/images/logo.png",
+              "foundingDate": "2018",
+              "email": "videre2.cz@gmail.com",
+              "telephone": "+420-739-102-255",
               "priceRange": "$$",
-              "taxID": "22652540",
+              "taxID": "07098553",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Táborská 325/57",
-                "addressLocality": "Praha 4",
-                "postalCode": "140 00",
+                "streetAddress": "Strossmayerovo nám. 977/2",
+                "addressLocality": "Praha 7",
+                "postalCode": "170 00",
                 "addressRegion": "Praha",
                 "addressCountry": "CZ"
               },
               "geo": {
                 "@type": "GeoCoordinates",
-                "latitude": "50.062980",
-                "longitude": "14.441230"
+                "latitude": "50.0994",
+                "longitude": "14.4329"
               },
               "openingHoursSpecification": [
                 {
@@ -80,25 +80,25 @@
             },
             {
               "@type": "WebSite",
-              "@id": "https://www.clinicm.cz/#website",
-              "url": "https://www.clinicm.cz",
-              "name": "M Clinic",
-              "description": "Oční klinika v Praze 4 s profesionální péčí o zrak",
+              "@id": "https://www.videre2.cz/#website",
+              "url": "https://www.videre2.cz",
+              "name": "Videre 2",
+              "description": "Oční klinika v Praze 7 s profesionální péčí o zrak",
               "publisher": {
-                "@id": "https://www.clinicm.cz/#organization"
+                "@id": "https://www.videre2.cz/#organization"
               },
               "inLanguage": "cs-CZ"
             },
             {
               "@type": "WebPage",
-              "@id": "https://www.clinicm.cz/#webpage",
-              "url": "https://www.clinicm.cz",
-              "name": "M Clinic | Oční klinika Praha 4 - Profesionální péče o zrak",
+              "@id": "https://www.videre2.cz/#webpage",
+              "url": "https://www.videre2.cz",
+              "name": "Videre 2 | Oční klinika Praha 7 - Profesionální péče o zrak",
               "isPartOf": {
-                "@id": "https://www.clinicm.cz/#website"
+                "@id": "https://www.videre2.cz/#website"
               },
               "about": {
-                "@id": "https://www.clinicm.cz/#organization"
+                "@id": "https://www.videre2.cz/#organization"
               },
               "description": "Komplexní oční vyšetření a diagnostika s moderními technologiemi. Spolupracujeme se všemi pojišťovnami.",
               "inLanguage": "cs-CZ"
@@ -135,17 +135,17 @@ import InsuranceNotice from '~/components/InsuranceNotice.vue'
 
 // SEO Meta tags
 useHead({
-  title: 'M Clinic | Oční klinika Praha 4 - Profesionální péče o zrak',
+  title: 'Videre 2 | Oční klinika Praha 7 - Profesionální péče o zrak',
   meta: [
-    { name: 'description', content: 'Komplexní oční vyšetření, diagnostika glaukomu a katarakty s moderními technologiemi OCT a perimetr. Spolupracujeme se všemi pojišťovnami. Praha 4, Táborská 325/57.' },
-    { name: 'keywords', content: 'oční klinika praha 4, OCT vyšetření, glaukom, katarakta, oční lékař táborská' }
+    { name: 'description', content: 'Komplexní oční vyšetření, diagnostika glaukomu a katarakty s moderními technologiemi OCT a perimetr. Spolupracujeme se všemi pojišťovnami. Praha 7, Strossmayerovo nám. 977/2.' },
+    { name: 'keywords', content: 'oční klinika praha 7, OCT vyšetření, glaukom, katarakta, oční lékař strossmayerovo, Videre 2' }
   ]
 })
 
 // Canonical URL
 useHead({
   link: [
-    { rel: 'canonical', href: 'https://www.clinicm.cz/' }
+    { rel: 'canonical', href: 'https://www.videre2.cz/' }
   ]
 })
 </script> 

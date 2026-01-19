@@ -1,45 +1,36 @@
 <template>
   <div class="min-h-screen relative overflow-hidden">
-    <!-- Premium Background Design - Deep Purple Theme -->
+    <!-- Vibrant Glassmorphic Background -->
     <div class="fixed inset-0 z-0">
-      <!-- Base white background with subtle purple tint -->
-      <div class="absolute inset-0 bg-gradient-to-br from-white via-purple-50/40 to-violet-100/50"></div>
+      <!-- Base gradient - teal/cyan vibes -->
+      <div class="absolute inset-0 bg-white"></div>
 
-      <!-- Large blurry purple circles randomly positioned -->
-      <div class="absolute top-10 left-10 w-96 h-96 bg-gradient-to-r from-purple-400/30 to-violet-400/30 rounded-full blur-3xl animate-pulse"></div>
-      <div class="absolute top-32 right-20 w-80 h-80 bg-gradient-to-r from-violet-300/35 to-purple-400/35 rounded-full blur-3xl animate-pulse delay-1000"></div>
-      <div class="absolute bottom-20 left-1/3 w-72 h-72 bg-gradient-to-r from-purple-400/25 to-violet-500/25 rounded-full blur-3xl animate-pulse delay-500"></div>
-      <div class="absolute top-1/2 right-1/4 w-64 h-64 bg-gradient-to-r from-violet-200/40 to-purple-400/40 rounded-full blur-3xl animate-pulse delay-700"></div>
-      <div class="absolute bottom-40 right-10 w-56 h-56 bg-gradient-to-r from-purple-300/35 to-violet-400/35 rounded-full blur-3xl animate-pulse delay-300"></div>
-      <div class="absolute top-1/4 left-1/2 w-88 h-88 bg-gradient-to-r from-violet-300/30 to-purple-500/30 rounded-full blur-3xl animate-pulse delay-1200"></div>
-      <div class="absolute bottom-1/3 left-1/6 w-48 h-48 bg-gradient-to-r from-purple-300/40 to-violet-400/40 rounded-full blur-3xl animate-pulse delay-800"></div>
-      <div class="absolute top-3/4 right-1/3 w-40 h-40 bg-gradient-to-r from-violet-400/45 to-purple-300/45 rounded-full blur-3xl animate-pulse delay-400"></div>
+      <!-- Teal/Cyan floating orbs -->
+      <div class="absolute top-[-10%] left-[-5%] w-[400px] h-[400px] bg-gradient-to-br from-teal-400/30 to-cyan-500/25 rounded-full blur-3xl animate-float"></div>
+      <div class="absolute top-[5%] right-[-8%] w-[350px] h-[350px] bg-gradient-to-br from-cyan-400/25 to-teal-500/20 rounded-full blur-3xl animate-float-delayed"></div>
+      <div class="absolute top-[40%] left-[-8%] w-[300px] h-[300px] bg-gradient-to-br from-teal-300/25 to-cyan-400/20 rounded-full blur-3xl animate-float-slow"></div>
+      <div class="absolute top-[60%] right-[5%] w-[350px] h-[350px] bg-gradient-to-br from-cyan-300/25 to-teal-400/20 rounded-full blur-3xl animate-float"></div>
+      <div class="absolute bottom-[-5%] left-[20%] w-[400px] h-[400px] bg-gradient-to-br from-teal-400/25 to-cyan-500/20 rounded-full blur-3xl animate-float-delayed"></div>
+      <!-- Center blobs -->
+      <div class="absolute top-[30%] left-[40%] w-[300px] h-[300px] bg-gradient-to-br from-cyan-400/20 to-teal-400/15 rounded-full blur-3xl animate-float-slow"></div>
+      <div class="absolute top-[50%] left-[25%] w-[250px] h-[250px] bg-gradient-to-br from-teal-300/20 to-cyan-300/15 rounded-full blur-3xl animate-float"></div>
+      <div class="absolute top-[45%] right-[30%] w-[280px] h-[280px] bg-gradient-to-br from-cyan-300/20 to-teal-300/15 rounded-full blur-3xl animate-float-delayed"></div>
 
-      <!-- Additional large circles for more coverage -->
-      <div class="absolute top-1/6 left-1/4 w-32 h-32 bg-gradient-to-r from-purple-300/40 to-violet-400/40 rounded-full blur-2xl animate-pulse delay-600"></div>
-      <div class="absolute bottom-1/4 right-1/6 w-24 h-24 bg-gradient-to-r from-violet-300/45 to-purple-400/45 rounded-full blur-2xl animate-pulse delay-900"></div>
-      <div class="absolute top-2/3 left-2/3 w-36 h-36 bg-gradient-to-r from-purple-400/35 to-violet-300/35 rounded-full blur-2xl animate-pulse delay-1100"></div>
-
-      <!-- Subtle overlay to blend everything -->
-      <div class="absolute inset-0 bg-gradient-to-tr from-white/60 via-transparent to-purple-50/20"></div>
-
-      <!-- Very subtle grid pattern -->
-      <div class="absolute inset-0 opacity-8">
-        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(139, 92, 246, 0.3) 1px, transparent 0); background-size: 50px 50px;"></div>
+      <!-- Dot grid pattern -->
+      <div class="absolute inset-0 opacity-40">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 1px 1px, rgba(0, 0, 0, 0.15) 1px, transparent 0); background-size: 24px 24px;"></div>
       </div>
+
+      <!-- Noise texture overlay for depth -->
+      <div class="absolute inset-0 opacity-[0.015]" style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 256 256%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%224%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22/%3E%3C/svg%3E');"></div>
     </div>
 
-    <!-- Content wrapper with backdrop blur -->
+    <!-- Content wrapper -->
     <div class="relative z-10">
-      <!-- Navbar component -->
       <Navbar />
-      
-      <!-- Main content area with slot for page content -->
-      <main class="pt-16">
+      <main class="pt-20">
         <slot />
       </main>
-      
-      <!-- Footer component -->
       <Footer />
     </div>
   </div>
@@ -50,45 +41,33 @@ import Navbar from '../components/navbar.vue'
 import Footer from '../components/Footer.vue'
 </script>
 
-<style scoped>
-/* Custom animation delays for staggered pulsing */
-.delay-1000 {
-  animation-delay: 1s;
+<style>
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -30px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
 }
 
-.delay-500 {
-  animation-delay: 0.5s;
+@keyframes float-delayed {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-25px, 25px) scale(0.95); }
+  66% { transform: translate(35px, -15px) scale(1.05); }
 }
 
-.delay-700 {
-  animation-delay: 0.7s;
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, -40px) scale(1.03); }
 }
 
-.delay-300 {
-  animation-delay: 0.3s;
+.animate-float {
+  animation: float 20s ease-in-out infinite;
 }
 
-.delay-1200 {
-  animation-delay: 1.2s;
+.animate-float-delayed {
+  animation: float-delayed 25s ease-in-out infinite;
 }
 
-.delay-800 {
-  animation-delay: 0.8s;
+.animate-float-slow {
+  animation: float-slow 30s ease-in-out infinite;
 }
-
-.delay-400 {
-  animation-delay: 0.4s;
-}
-
-.delay-600 {
-  animation-delay: 0.6s;
-}
-
-.delay-900 {
-  animation-delay: 0.9s;
-}
-
-.delay-1100 {
-  animation-delay: 1.1s;
-}
-</style> 
+</style>
