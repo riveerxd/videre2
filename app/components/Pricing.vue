@@ -56,11 +56,11 @@
         <div class="grid gap-6 sm:grid-cols-2">
           <div class="p-6 rounded-2xl bg-gradient-to-br from-teal-50/80 to-cyan-50/60 border border-teal-100 text-center group hover:border-teal-200 transition-colors">
             <h4 class="text-lg font-bold text-gray-800 mb-2">Horních víček</h4>
-            <span class="text-3xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">15 000 Kč</span>
+            <span class="text-3xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">17 000 Kč</span>
           </div>
           <div class="p-6 rounded-2xl bg-gradient-to-br from-teal-50/80 to-cyan-50/60 border border-teal-100 text-center group hover:border-teal-200 transition-colors">
             <h4 class="text-lg font-bold text-gray-800 mb-2">Dolních víček</h4>
-            <span class="text-3xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">15 000 Kč</span>
+            <span class="text-3xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">17 000 Kč</span>
           </div>
         </div>
       </div>
