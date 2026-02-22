@@ -52,9 +52,9 @@
           </div>
 
           <!-- Made by -->
-          <a href="#" class="text-gray-600 hover:text-cyan-600 transition-colors duration-300 text-sm">
-            Made by <span class="font-bold text-cyan-600">river</span>
-          </a>
+          <span class="text-gray-600 text-sm">
+            Made by <a href="https://riveer.cz/" target="_blank" rel="noopener noreferrer" class="font-bold text-cyan-600 hover:text-cyan-700 cursor-pointer hover:underline transition-colors duration-300">river</a>
+          </span>
         </div>
       </div>
     </div>
