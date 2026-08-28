@@ -46,7 +46,7 @@
                   <span class="relative inline-flex rounded-full h-2 w-2" :class="statusColor"></span>
                 </span>
                 <span class="text-sm font-bold" :class="statusTextColor">{{ currentStatus }}</span>
-                <span v-if="timeUntilNextChange" class="text-xs text-gray-500">{{ timeUntilNextChange }}</span>
+                <span v-if="timeUntilNextChange" class="text-xs text-gray-500 tabular-nums">{{ timeUntilNextChange }}</span>
               </div>
             </template>
             <template #fallback>
@@ -63,23 +63,23 @@
               class="flex items-center justify-between p-3 rounded-xl transition-all duration-200"
               :class="getDayRowClass(day)"
             >
-              <div class="flex items-center gap-3">
-                <div class="w-10 h-10 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-xl flex items-center justify-center shadow-md">
+              <div class="flex items-center gap-3 min-w-0">
+                <div class="w-10 h-10 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
                   <span class="text-white font-bold text-xs">{{ getDayInitial(day) }}</span>
                 </div>
                 <span class="font-semibold text-gray-800">{{ getDayName(day) }}</span>
               </div>
-              <span v-if="hours && hours.open && hours.close" class="font-bold text-gray-900">
+              <span v-if="hours && hours.open && hours.close" class="font-bold text-gray-900 tabular-nums flex-shrink-0">
                 {{ hours.open }} - {{ hours.close }}
               </span>
-              <span v-else class="font-bold text-gray-400">Zavřeno</span>
+              <span v-else class="font-bold text-gray-400 flex-shrink-0">Zavřeno</span>
             </div>
           </div>
 
           <!-- Address Card -->
           <div class="mt-8 p-4 bg-white/50 rounded-2xl border border-white/60">
             <div class="flex items-center gap-4">
-              <div class="w-12 h-12 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-xl flex items-center justify-center shadow-md">
+              <div class="w-12 h-12 bg-gradient-to-br from-teal-400 to-cyan-500 rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
                 <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>

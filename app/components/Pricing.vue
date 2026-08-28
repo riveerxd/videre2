@@ -33,7 +33,7 @@
             class="p-5 rounded-2xl bg-gradient-to-br from-white/50 to-white/30 border border-white/60 text-center hover:from-teal-50/50 hover:to-cyan-50/30 transition-colors duration-300 group"
           >
             <span class="text-gray-700 text-sm font-medium block mb-2">{{ item.name }}</span>
-            <span class="text-2xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">{{ item.price }}</span>
+            <span class="text-2xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent tabular-nums">{{ item.price }}</span>
             <p v-if="item.note" class="text-xs text-gray-500 mt-2">{{ item.note }}</p>
           </div>
         </div>
@@ -54,13 +54,13 @@
         </div>
 
         <div class="grid gap-6 sm:grid-cols-2">
-          <div class="p-6 rounded-2xl bg-gradient-to-br from-teal-50/80 to-cyan-50/60 border border-teal-100 text-center group hover:border-teal-200 transition-colors">
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-teal-50/80 to-cyan-50/60 border border-teal-100 text-center group hover:border-teal-200 transition-colors duration-200">
             <h4 class="text-lg font-bold text-gray-800 mb-2">Horních víček</h4>
-            <span class="text-3xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">17 000 Kč</span>
+            <span class="text-3xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent tabular-nums">17 000 Kč</span>
           </div>
-          <div class="p-6 rounded-2xl bg-gradient-to-br from-teal-50/80 to-cyan-50/60 border border-teal-100 text-center group hover:border-teal-200 transition-colors">
+          <div class="p-6 rounded-2xl bg-gradient-to-br from-teal-50/80 to-cyan-50/60 border border-teal-100 text-center group hover:border-teal-200 transition-colors duration-200">
             <h4 class="text-lg font-bold text-gray-800 mb-2">Dolních víček</h4>
-            <span class="text-3xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">17 000 Kč</span>
+            <span class="text-3xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent tabular-nums">17 000 Kč</span>
           </div>
         </div>
       </div>

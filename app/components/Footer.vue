@@ -53,7 +53,7 @@
 
           <!-- Made by -->
           <span class="text-gray-600 text-sm">
-            Made by <a href="https://riveer.cz/" target="_blank" rel="noopener noreferrer" class="font-bold text-cyan-600 hover:text-cyan-700 cursor-pointer hover:underline transition-colors duration-300">river</a>
+            Made by <a href="https://riveer.cz/" target="_blank" rel="noopener noreferrer" class="font-bold text-cyan-700 hover:text-cyan-800 cursor-pointer hover:underline transition-colors duration-300 rounded focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white">river</a>
           </span>
         </div>
       </div>

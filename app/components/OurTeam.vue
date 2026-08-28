@@ -36,12 +36,12 @@
           <p class="text-teal-600 font-semibold mb-6">Oftalmolog</p>
           <div class="flex items-center justify-center gap-8">
             <div class="text-center">
-              <div class="text-2xl font-black bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">20+</div>
+              <div class="text-2xl font-black bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent tabular-nums">20+</div>
               <div class="text-xs text-gray-500 uppercase tracking-wide font-semibold">Let praxe</div>
             </div>
             <div class="w-px h-12 bg-gray-200"></div>
             <div class="text-center">
-              <div class="text-2xl font-black bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">8k+</div>
+              <div class="text-2xl font-black bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent tabular-nums">8k+</div>
               <div class="text-xs text-gray-500 uppercase tracking-wide font-semibold">Pacientů</div>
             </div>
           </div>
@@ -65,12 +65,12 @@
           <p class="text-teal-600 font-semibold mb-6">Oftalmolog</p>
           <div class="flex items-center justify-center gap-8">
             <div class="text-center">
-              <div class="text-2xl font-black bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent">15+</div>
+              <div class="text-2xl font-black bg-gradient-to-r from-teal-400 to-cyan-500 bg-clip-text text-transparent tabular-nums">15+</div>
               <div class="text-xs text-gray-500 uppercase tracking-wide font-semibold">Let praxe</div>
             </div>
             <div class="w-px h-12 bg-gray-200"></div>
             <div class="text-center">
-              <div class="text-2xl font-black bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">5k+</div>
+              <div class="text-2xl font-black bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent tabular-nums">5k+</div>
               <div class="text-xs text-gray-500 uppercase tracking-wide font-semibold">Pacientů</div>
             </div>
           </div>

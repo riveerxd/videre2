@@ -21,43 +21,43 @@
               <a
                 href="#hero"
                 @click.prevent="smoothScrollTo('hero')"
-                class="text-gray-700 hover:text-cyan-600 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+                class="text-gray-700 hover:text-cyan-700 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 >Domů</a
               >
               <a
                 href="#opening-clinic"
                 @click.prevent="smoothScrollTo('opening-clinic')"
-                class="text-gray-700 hover:text-cyan-600 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+                class="text-gray-700 hover:text-cyan-700 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 >Klinika</a
               >
               <a
                 href="#our-team"
                 @click.prevent="smoothScrollTo('our-team')"
-                class="text-gray-700 hover:text-cyan-600 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+                class="text-gray-700 hover:text-cyan-700 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 >Lékaři</a
               >
               <a
                 href="#procedures"
                 @click.prevent="smoothScrollTo('procedures')"
-                class="text-gray-700 hover:text-cyan-600 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+                class="text-gray-700 hover:text-cyan-700 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 >Zákroky</a
               >
               <a
                 href="#technologies"
                 @click.prevent="smoothScrollTo('technologies')"
-                class="text-gray-700 hover:text-cyan-600 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+                class="text-gray-700 hover:text-cyan-700 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 >Technologie</a
               >
               <a
                 href="#pricing"
                 @click.prevent="smoothScrollTo('pricing')"
-                class="text-gray-700 hover:text-cyan-600 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+                class="text-gray-700 hover:text-cyan-700 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 >Ceník</a
               >
               <a
                 href="#contact"
                 @click.prevent="smoothScrollTo('contact')"
-                class="text-gray-700 hover:text-cyan-600 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+                class="text-gray-700 hover:text-cyan-700 px-4 py-2 text-sm font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
                 >Kontakt</a
               >
             </div>
@@ -66,8 +66,11 @@
           <!-- Mobile menu button -->
           <div class="md:hidden">
             <button
+              type="button"
+              :aria-expanded="isMobileMenuOpen"
+              aria-controls="mobile-menu"
               @click="isMobileMenuOpen = !isMobileMenuOpen"
-            class="inline-flex items-center justify-center p-2 rounded-lg text-gray-700 hover:text-cyan-600 hover:bg-white/20 focus:outline-none focus:ring-cyan-500/50 transition-all duration-300"
+            class="inline-flex items-center justify-center min-w-[44px] min-h-[44px] p-2 rounded-lg text-gray-700 hover:text-cyan-700 hover:bg-white/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white transition-all duration-300"
             >
               <span class="sr-only">Open main menu</span>
               <!-- Hamburger icon with morphing animation -->
@@ -99,50 +102,50 @@
         leave-from-class="opacity-100 max-h-96"
         leave-to-class="opacity-0 max-h-0"
       >
-        <div v-if="isMobileMenuOpen" class="md:hidden overflow-hidden">
+        <div v-if="isMobileMenuOpen" id="mobile-menu" class="md:hidden overflow-hidden">
           <div
             class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-b border-white/30"
           >
           <a
             href="#hero"
             @click.prevent="smoothScrollTo('hero')"
-            class="text-gray-700 hover:text-cyan-600 block px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+            class="text-gray-700 hover:text-cyan-700 flex items-center min-h-[44px] px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >Domů</a
           >
           <a
             href="#opening-clinic"
             @click.prevent="smoothScrollTo('opening-clinic')"
-            class="text-gray-700 hover:text-cyan-600 block px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+            class="text-gray-700 hover:text-cyan-700 flex items-center min-h-[44px] px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >Klinika</a
           >
           <a
             href="#our-team"
             @click.prevent="smoothScrollTo('our-team')"
-            class="text-gray-700 hover:text-cyan-600 block px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+            class="text-gray-700 hover:text-cyan-700 flex items-center min-h-[44px] px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >Lékaři</a
           >
           <a
             href="#procedures"
             @click.prevent="smoothScrollTo('procedures')"
-            class="text-gray-700 hover:text-cyan-600 block px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+            class="text-gray-700 hover:text-cyan-700 flex items-center min-h-[44px] px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >Zákroky</a
           >
           <a
             href="#technologies"
             @click.prevent="smoothScrollTo('technologies')"
-            class="text-gray-700 hover:text-cyan-600 block px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+            class="text-gray-700 hover:text-cyan-700 flex items-center min-h-[44px] px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >Technologie</a
           >
           <a
             href="#pricing"
             @click.prevent="smoothScrollTo('pricing')"
-            class="text-gray-700 hover:text-cyan-600 block px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+            class="text-gray-700 hover:text-cyan-700 flex items-center min-h-[44px] px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >Ceník</a
           >
           <a
             href="#contact"
             @click.prevent="smoothScrollTo('contact')"
-            class="text-gray-700 hover:text-cyan-600 block px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer"
+            class="text-gray-700 hover:text-cyan-700 flex items-center min-h-[44px] px-3 py-2 text-base font-semibold transition-all duration-300 hover:bg-white/20 rounded-lg cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >Kontakt</a
           >
           </div>
@@ -174,6 +177,12 @@ const smoothScrollTo = (sectionId) => {
     // Calculate position with offset
     const elementPosition = splitter.getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
+
+    // A 1.2s animated scroll is motion the user may have opted out of, so jump straight there.
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      window.scrollTo(0, offsetPosition);
+      return;
+    }
 
     // Premium smooth scroll with longer duration
     const startPosition = window.pageYOffset;

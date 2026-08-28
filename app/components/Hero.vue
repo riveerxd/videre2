@@ -23,17 +23,17 @@
             <a
               href="#procedures"
               @click.prevent="smoothScrollTo('procedures')"
-              class="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-bold rounded-2xl shadow-lg shadow-teal-500/30 hover:shadow-xl hover:shadow-teal-500/40 hover:-translate-y-0.5 transition-all duration-300"
+              class="group inline-flex items-center justify-center gap-2 px-8 py-4 bg-gradient-to-r from-teal-500 to-cyan-500 text-white font-bold rounded-2xl shadow-lg shadow-teal-500/30 hover:shadow-xl hover:shadow-teal-500/40 hover:-translate-y-0.5 transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               <span>Naše služby</span>
-              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
               </svg>
             </a>
 
             <a
               href="tel:+420739102255"
-              class="inline-flex items-center justify-center gap-2 px-8 py-4 glass-card-btn font-bold rounded-2xl hover:-translate-y-0.5 transition-all duration-300 text-gray-700 hover:text-teal-600"
+              class="inline-flex items-center justify-center gap-2 px-8 py-4 glass-card-btn font-bold rounded-2xl hover:-translate-y-0.5 transition-all duration-300 text-gray-700 hover:text-teal-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-700 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
             >
               <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
@@ -45,17 +45,17 @@
           <!-- Stats -->
           <div class="flex flex-wrap items-center justify-center lg:justify-start gap-8 pt-4">
             <div class="text-center">
-              <div class="text-3xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent">15+</div>
+              <div class="text-3xl font-black bg-gradient-to-r from-teal-500 to-cyan-500 bg-clip-text text-transparent tabular-nums">15+</div>
               <div class="text-sm text-gray-500">let zkušeností</div>
             </div>
             <div class="w-px h-12 bg-gray-200"></div>
             <div class="text-center">
-              <div class="text-3xl font-black bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent">10k+</div>
+              <div class="text-3xl font-black bg-gradient-to-r from-cyan-500 to-teal-500 bg-clip-text text-transparent tabular-nums">10k+</div>
               <div class="text-sm text-gray-500">spokojených pacientů</div>
             </div>
             <div class="w-px h-12 bg-gray-200"></div>
             <div class="text-center">
-              <div class="text-3xl font-black bg-gradient-to-r from-teal-500 to-emerald-500 bg-clip-text text-transparent">99%</div>
+              <div class="text-3xl font-black bg-gradient-to-r from-teal-500 to-emerald-500 bg-clip-text text-transparent tabular-nums">99%</div>
               <div class="text-sm text-gray-500">úspěšnost</div>
             </div>
           </div>
@@ -88,7 +88,9 @@ const smoothScrollTo = (sectionId) => {
     const navbarHeight = 80;
     const elementPosition = targetSection.getBoundingClientRect().top;
     const offsetPosition = elementPosition + window.pageYOffset - navbarHeight;
-    window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+    // Browsers do not apply the reduced motion preference to scripted smooth scrolling, so check it here.
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: offsetPosition, behavior: reduceMotion ? 'auto' : 'smooth' });
   }
 };
 </script>
